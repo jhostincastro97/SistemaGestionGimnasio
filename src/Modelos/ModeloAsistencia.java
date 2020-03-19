@@ -14,7 +14,12 @@ import java.util.Date;
 public class ModeloAsistencia {
     ModeloCliente cte;
     Date fecha;
-
+    int id;
+    int idcliente;
+    public ModeloAsistencia(int id,Date fecha,int idcliente) {
+        this.cte = cte;
+        this.fecha = fecha;
+    }
     public ModeloCliente getCte() {
         return cte;
     }

@@ -6,6 +6,7 @@
 package Negocio;
 
 import DAO.DAOAsistencias;
+import DAO.DAOClientes;
 import Modelos.ModeloAsistencia;
 import java.util.ArrayList;
 
@@ -15,13 +16,13 @@ import java.util.ArrayList;
  */
 public class NegocioAsistencia {
     DAOAsistencias asis = new DAOAsistencias();
-    
+    DAOClientes ctes = new DAOClientes();
     public boolean addAsistencia(ModeloAsistencia asi) {
-        throw new UnsupportedOperationException("lol nope");
+        return asis.agregar(asi);
     }
     
     public boolean delAsistencia(ModeloAsistencia asi) {
-        throw new UnsupportedOperationException("lol nope");
+        return asis.eliminar(asi);
     }
     
     public ArrayList buscarAsistencias() {
